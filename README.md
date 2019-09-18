@@ -1,7 +1,7 @@
-# Speach-Analyzer
+# Speech-Analyzer
 Analyze Toxicity in speach text
 <p>
-  <img src="sppech_analyzer.png">
+  <img src="speech_analyzer.png">
 </p>
 This is a generic Toxicity analysis classifier for texts in English. It works great in speech and opinion kind of texts. If you are not sure of which sentiment analysis classifier to use, use this one.
 <br>
@@ -13,5 +13,5 @@ This simple webapp is created using python with Flask framework. ML models were 
   - After prdictions, Flask renders the result page with a Pie chart and table as shown below.
 
 <p>
-    <img src="speech_result">
+    <img src="speech_result.png">
 </p>

@@ -1,7 +1,7 @@
 # Speech-Analyzer
-Analyze Toxicity in speach text
+Analyze Toxicity in speech text
 <p>
-  <img src="speech_analyzer.png">
+  <img src="speech_analyzer1.png">
 </p>
 This is a generic Toxicity analysis classifier for texts in English. It works great in speech and opinion kind of texts. If you are not sure of which sentiment analysis classifier to use, use this one.
 <br>

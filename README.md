@@ -1,2 +1,2 @@
-# Sppech-Analyzer
+# Speach-Analyzer
 Analyze Toxicity in speech text

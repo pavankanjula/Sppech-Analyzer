@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Speech Analyzer</title>
+{% endblock %}
+{% block body %}
+
+<div class="row" style="margin-left: 200px; margin-right: 200px; margin-top: 20px;border-radius: 10px; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1); background-color: white">
+		<div class = 'col-sm-6'>
+				<table class="table table-striped table-dark" style="margin-top:30px">
+						<thead>
+							<tr>
+								<th scope="col">Toxicity level</th>
+								<th scope="col">Percentage</th>
+							</tr>
+						</thead>
+						<tbody>
+						{% for fraction in fractions %}
+							<tr>
+								<td>{{ fraction }}</td>
+								<td>{{ fractions[fraction] }}%</td>
+							</tr>
+						{% endfor %}
+					</tbody>
+					</table>
+		</div>
+		<div class = 'col-sm-6'>
+				<img src="data:image/png;base64, {{ plot_url }}" align="right">
+		</div>
+</div>
+
+
+ <!--
+	<p style="color:blue;font-size:20;text-align: center;"><b>Results for Speech</b></p>
+	<img src="data:image/png;base64, {{ plot_url }}" align="right">
+	<div class="results">
+
+
+		
+	
+	<h2 style="color:red;">Normal: {{normal}}%</h2>
+	<h2 style="color:red;">Toxic: {{toxic}}%</h2>
+	<h2 style="color:red;">Severe Toxic: {{severe_toxic}}%</h2>
+	<h2 style="color:red;">Obscene: {{obscene}}%</h2>
+	<h2 style="color:red;">Threat: {{threat}}%</h2>
+	<h2 style="color:red;">Insult: {{insult}}%</h2>
+	<h2 style="color:red;">Identity Hate: {{identity_hate}}%</h2>
+
+	</div> 
+-->
+
+{% endblock %}
+ 

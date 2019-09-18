@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Speech Analyzer</title>
+{% endblock %}
+{% block body %}	
+	
+
+	 
+
+	<div class="row" style="margin-left: 200px; margin-right: 200px; margin-top: 20px;border-radius: 10px; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1); background-color: white">
+		<div class = 'col-sm-12'>
+			 
+			<br>
+			<form action="{{ url_for('predict')}}" method="POST">
+					<div class="form-group">
+							<label for="exampleFormControlTextarea1"><h4>Test with your own text</h4></label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" name='message' rows="14"></textarea>
+						</div>
+							<input class="btn btn-success btn-sm" type="submit" style="margin-bottom:10px" value="Analyze">
+		
+	</form>
+		</div>
+	</div>
+
+	 
+<!--
+	<div class=class="shadow p-3 mb-5 bg-white rounded">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<p>Enter/Paste Your Speech Here</p> -->
+		<!-- <input type="text" name="comment"/> -->
+	<!--	<textarea name="message" rows="25" cols="140"></textarea>
+		<br/>
+
+		<input type="submit" class="btn-info" value="predict">
+		
+	</form>
+		
+	</div> -->
+
+	
+{% endblock %}
